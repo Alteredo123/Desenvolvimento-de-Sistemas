@@ -1,0 +1,28 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aquamarine;
+}
+
+h1{text-align: center;}
+
+section{width: 400px;}
+
+/*FORMATANTO O BLOCO 1*/
+.bloco1 p{color: blueviolet;}
+.bloco1 > p{text-decoration: line-through; text-align: end;}
+
+
+.bloco1{border-width: 10px;
+        border-color: red;
+        border-style: solid;
+        box-sizing: border-box;
+        padding-top:10px;
+        padding-top:50px;}
+/*Quamdo colocamos 2 valores no margin, o 1º valor irá afetar top e bottom. O 2º valor irá afetar o left e right */
+
+.bloco2{
+    border: 2px solid green; 
+    padding: 10px;
+    box-sizing: border-box;}/*box-sizing:border-box irá alterar o comportamento padrão do dimensionamento do elemento HTML. De forma que quando aplicado border e padding, a estrutura não irá expandir.*/
+
+.bloco2 + p{text-transform: uppercase;color:blue;}/*O seletor + é o seletor adjacente, que irá formatar o elemento examente após o seletor que usamos como referência, nesse caso, é o bloco2.*/
